@@ -1,0 +1,31 @@
+{
+  "name": "tylr",
+  "version": "0.0.1",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "dev": "concurrently \"bsb -clean-world -make-world -w\" \"next dev\"",
+    "dev:reason": "bsb -clean-world -make-world -w",
+    "dev:next": "next dev",
+    "build": "bsb -clean-world -make-world && next build",
+    "start": "next start"
+  },
+  "dependencies": {
+    "@jsiebern/bs-material-ui": "^1.2.0",
+    "@material-ui/core": "^4.9.5",
+    "@material-ui/icons": "^4.9.1",
+    "@mscharley/bs-material-ui-icons": "^1.0.2",
+    "babel-plugin-bucklescript": "^0.5.3",
+    "next": "^9.2.2",
+    "next-transpile-modules": "^3.0.2",
+    "re-classnames": "^4.1.0",
+    "react": "^16.13.0",
+    "react-dom": "^16.13.0",
+    "reason-react": "0.7.0"
+  },
+  "devDependencies": {
+    "@jsiebern/bs-material-ui-ppx": "^1.0.6",
+    "bs-platform": "^7.1.1",
+    "concurrently": "^5.1.0"
+  }
+}
